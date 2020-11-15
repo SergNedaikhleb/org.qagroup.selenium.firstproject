@@ -2,11 +2,11 @@
 
 <suite name="Regression" verbose="1" >
 
-    <test name="TestLoginAndLogout" ><classes><class name="TestLoginAndLogout" /></classes></test>
+<!--    <test name="TestLoginAndLogout" ><classes><class name="TestLoginAndLogout" /></classes></test>-->
 <!--    test our website-->
     <test name="TryToFindElements" ><classes><class name="TryToFindElements" /></classes></test>
 
-    <test name="MainPageSearchField" ><classes><class name="MainPageSearchField" /></classes></test>
+<!--    <test name="MainPageSearchField" ><classes><class name="MainPageSearchField" /></classes></test>-->
 
 
 </suite>
