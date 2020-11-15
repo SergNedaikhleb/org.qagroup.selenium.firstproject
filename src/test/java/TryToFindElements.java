@@ -18,6 +18,9 @@ public class TryToFindElements {
         // let us disable any notification for protect out test execution from unexpected blockers
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--headless");
         driver = new ChromeDriver(options);
         // go to website
         driver.get("https://rozetka.com.ua/");
