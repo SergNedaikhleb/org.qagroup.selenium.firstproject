@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestLoginAndLogout" duration-ms="12912" started-at="2020-11-15T23:15:50 EET" finished-at="2020-11-15T23:16:03 EET">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="12912" started-at="2020-11-15T23:15:50 EET" finished-at="2020-11-15T23:16:03 EET">
+      <class name="TestLoginAndLogout">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestLoginAndLogout@6d4b1c02]" name="setup" is-config="true" duration-ms="7539" started-at="2020-11-15T23:15:50 EET" finished-at="2020-11-15T23:15:57 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testLogin()[pri:1, instance:TestLoginAndLogout@6d4b1c02]" name="testLogin" duration-ms="4618" started-at="2020-11-15T23:15:57 EET" description="login and check elements" finished-at="2020-11-15T23:16:02 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:TestLoginAndLogout@6d4b1c02]" name="teardown" is-config="true" duration-ms="704" started-at="2020-11-15T23:16:02 EET" finished-at="2020-11-15T23:16:03 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestLoginAndLogout -->
+    </test> <!-- Command line test -->
+  </suite> <!-- TestLoginAndLogout -->
+</testng-results>
