@@ -30,9 +30,9 @@ public class LogoutGithub {
         return this;
     }
 
-    public LogoutGithub logoutUserFromAccount(String wait) throws InterruptedException {
+    public LogoutGithub logoutUserFromAccount() throws InterruptedException {
         headerButtonClick();
-     //   waitForNameInDropdownList(wait);
+  //      waitForNameInDropdownList(wait);
         Thread.sleep(1000);
         signOutItemFromListClick();
         waitForPageTitle();

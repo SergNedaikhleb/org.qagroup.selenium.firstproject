@@ -1,25 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="TestLoginAndLogout" duration-ms="12912" started-at="2020-11-15T23:15:50 EET" finished-at="2020-11-15T23:16:03 EET">
+  <suite name="Regression" duration-ms="16581" started-at="2020-11-20T22:39:41Z" finished-at="2020-11-20T22:39:57Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="12912" started-at="2020-11-15T23:15:50 EET" finished-at="2020-11-15T23:16:03 EET">
-      <class name="TestLoginAndLogout">
-        <test-method status="PASS" signature="setup()[pri:0, instance:TestLoginAndLogout@6d4b1c02]" name="setup" is-config="true" duration-ms="7539" started-at="2020-11-15T23:15:50 EET" finished-at="2020-11-15T23:15:57 EET">
+    <test name="TryToFindElements" duration-ms="7721" started-at="2020-11-20T22:39:41Z" finished-at="2020-11-20T22:39:48Z">
+      <class name="TryToFindElements">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TryToFindElements@c4039c]" name="setUp" is-config="true" duration-ms="6235" started-at="2020-11-20T22:39:41Z" finished-at="2020-11-20T22:39:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testLogin()[pri:1, instance:TestLoginAndLogout@6d4b1c02]" name="testLogin" duration-ms="4618" started-at="2020-11-15T23:15:57 EET" description="login and check elements" finished-at="2020-11-15T23:16:02 EET">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="findElements()[pri:0, instance:TryToFindElements@c4039c]" name="findElements" duration-ms="371" started-at="2020-11-20T22:39:47Z" description="get page elements and check, match, extract" finished-at="2020-11-20T22:39:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:TestLoginAndLogout@6d4b1c02]" name="teardown" is-config="true" duration-ms="704" started-at="2020-11-15T23:16:02 EET" finished-at="2020-11-15T23:16:03 EET">
+        </test-method> <!-- findElements -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TryToFindElements@c4039c]" name="tearDown" is-config="true" duration-ms="1097" started-at="2020-11-20T22:39:47Z" finished-at="2020-11-20T22:39:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- TestLoginAndLogout -->
-    </test> <!-- Command line test -->
-  </suite> <!-- TestLoginAndLogout -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- TryToFindElements -->
+    </test> <!-- TryToFindElements -->
+    <test name="4" duration-ms="8848" started-at="2020-11-20T22:39:48Z" finished-at="2020-11-20T22:39:57Z">
+      <class name="GithubTestAndPreprodEnvironments">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:GithubTestAndPreprodEnvironments@191a895]" name="setUp" is-config="true" duration-ms="4105" started-at="2020-11-20T22:39:48Z" finished-at="2020-11-20T22:39:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginInto()[pri:1, instance:GithubTestAndPreprodEnvironments@191a895]" name="loginInto" duration-ms="2055" started-at="2020-11-20T22:39:53Z" finished-at="2020-11-20T22:39:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInto -->
+        <test-method status="PASS" signature="inspectMainPage()[pri:2, instance:GithubTestAndPreprodEnvironments@191a895]" name="inspectMainPage" duration-ms="37" started-at="2020-11-20T22:39:55Z" finished-at="2020-11-20T22:39:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inspectMainPage -->
+        <test-method status="PASS" signature="logoutFromGithub()[pri:3, instance:GithubTestAndPreprodEnvironments@191a895]" name="logoutFromGithub" duration-ms="2012" started-at="2020-11-20T22:39:55Z" finished-at="2020-11-20T22:39:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromGithub -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:GithubTestAndPreprodEnvironments@191a895]" name="tearDown" is-config="true" duration-ms="636" started-at="2020-11-20T22:39:57Z" finished-at="2020-11-20T22:39:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GithubTestAndPreprodEnvironments -->
+    </test> <!-- 4 -->
+  </suite> <!-- Regression -->
 </testng-results>

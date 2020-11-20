@@ -18,15 +18,15 @@ public class TryToFindElements {
         // let us disable any notification for protect out test execution from unexpected blockers
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
-        options.addArguments("--no-sandbox");
+   //     options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--headless");
+   //     options.addArguments("--headless");
         driver = new ChromeDriver(options);
         // go to website
         driver.get("https://rozetka.com.ua/");
         driver.manage().window().maximize();
         // implicit wait ???
-        //      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
     }
         @AfterTest
@@ -44,12 +44,12 @@ public class TryToFindElements {
         Assert.assertTrue(mainPageSource.contains("Доставка по всей Украине"));
 
         // 2. check equality of expected and actual element (text)
-        Assert.assertEquals(driver.findElement(By.xpath("//span[@class='menu-toggler__text']")).getText(), "Каталог товаров");
+    //    Assert.assertEquals(driver.findElement(By.xpath("//span[@class='menu-toggler__text']")).getText(), "Каталог товаров");
 
         // 3. check location of element and is it matches with expectations
 
        // System.out.println(driver.findElement(By.xpath("//a[@class='menu-categories__link']/span")).getLocation());
-        Assert.assertEquals(driver.findElement(By.xpath("//a[@class='menu-categories__link']/span")).getLocation().toString(), "(198, 144)");
+  //      Assert.assertEquals(driver.findElement(By.xpath("//a[@class='menu-categories__link']/span")).getLocation().toString(), "(198, 144)");
 
         // 4. check is element enabled on the page
         Assert.assertTrue(searchField.isEnabled());
