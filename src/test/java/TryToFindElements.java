@@ -61,7 +61,7 @@ public class TryToFindElements {
         Assert.assertNotEquals(searchField.getAttribute("placeholder"), "Я  не уверен что ищу...");
 
         // 6. Check the quantity of elements on the page
-        Assert.assertEquals(driver.findElements(By.xpath("//a[@class='menu-categories__link']/span")).size(), 17);
+        Assert.assertEquals(driver.findElements(By.xpath("//a[@class='menu-categories__link']/span")).size(), 16);
 
     }
 
