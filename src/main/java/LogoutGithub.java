@@ -20,7 +20,7 @@ public class LogoutGithub {
         new WebDriverWait(driver, 10)
                 .until(ExpectedConditions.textToBePresentInElement(
                         driver.findElement(By.xpath(
-                                "//div[@class='py-6 py-sm-8 jumbotron-codelines']")), "Built for developers"));
+                                "//button[@type='submit']")), "Sign up for GitHub"));
         return this;
     }
     public LogoutGithub waitForNameInDropdownList(String text){
